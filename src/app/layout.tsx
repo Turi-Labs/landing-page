@@ -5,8 +5,8 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Nexus AI Lab - Advancing AI Research',
-  description: 'Leading AI research lab pushing the boundaries of artificial intelligence through groundbreaking research and innovation.',
+  title: 'Turi Lab - Advancing AI Research',
+  description: 'India Research Lab pushing the boundaries of artificial intelligence based agents.',
 };
 
 export default function RootLayout({
