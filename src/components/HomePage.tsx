@@ -15,7 +15,7 @@ export function HomePage() {
           <nav className="flex items-center justify-between mb-8 sm:mb-16">
             <Link to="/" className="flex items-center gap-2 hover:scale-105 transition-transform duration-300">
               <Brain className="w-8 h-8 text-blue-500 feature-icon" />
-              <span className="text-xl font-bold">Turi Lab</span>
+              <span className="text-xl font-bold">Turi Labs</span>
             </Link>
             
             <button 
@@ -92,9 +92,9 @@ export function HomePage() {
         <section className="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: Atom, title: "Quantum AI Research", desc: "Exploring the intersection of quantum computing and artificial intelligence.", color: "blue" },
-              { icon: Globe2, title: "Global Collaboration", desc: "Working with leading institutions worldwide to advance AI research.", color: "purple" },
-              { icon: Users, title: "Ethical AI Development", desc: "Ensuring responsible and ethical advancement of AI technologies.", color: "green" }
+              { icon: Atom, title: "Agency Services", desc: "We provide consulting and development services to help others build AI agents quickly and efficiently.", color: "blue" },
+              { icon: Globe2, title: "Indie Projects", desc: "We focus on creating innovative experimental projects to explore new ideas and technologies in AI.", color: "purple" },
+              { icon: Users, title: "AI Agents as Service", desc: "We aim to develop and offer AI agents that can be easily integrated into various applications and services.", color: "green" }
             ].map((feature, i) => (
               <div key={i} className="glass-card p-8 group hover:shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-blue-500/10">
                 <feature.icon className={`w-12 h-12 text-${feature.color}-500 mb-4 feature-icon`} />
@@ -107,9 +107,9 @@ export function HomePage() {
 
         <section className="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
           <div className="flex flex-col sm:flex-row justify-between items-center mb-12 gap-4">
-            <h2 className="text-3xl sm:text-4xl font-bold text-center sm:text-left">Latest Research</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-center sm:text-left">Latest Experiments</h2>
             <Link to="/research" className="text-blue-400 hover:text-blue-500 flex items-center gap-2 text-sm sm:text-base group">
-              View All Research <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+              View All <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </div>
           <ResearchGrid limit={2} />
@@ -140,7 +140,7 @@ export function HomePage() {
             <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
               <Link to="/" className="flex items-center gap-2 hover:scale-105 transition-transform duration-300">
                 <Brain className="w-6 h-6 text-blue-500 feature-icon" />
-                <span className="font-bold">Nexus AI Lab</span>
+                <span className="font-bold">Turi Labs</span>
               </Link>
               <div className="flex gap-6">
                 {[
