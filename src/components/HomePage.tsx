@@ -156,7 +156,7 @@ export function HomePage() {
               </div>
             </div>
             <div className="mt-8 text-center text-gray-500">
-              © 2024 Nexus AI Lab. All rights reserved.
+              © 2024 Turi Labs. All rights reserved.
             </div>
           </div>
         </footer>

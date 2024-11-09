@@ -21,10 +21,10 @@ const researchData = [
     category: "Multimodal"
   },
   {
-    image: "https://images.unsplash.com/photo-1696332331308-8a064129a487?auto=format&fit=crop&q=80",
-    title: "Reinforcement Learning Breakthroughs",
-    description: "Advanced algorithms for improved decision-making in complex environments.",
-    category: "RL"
+    image: "https://www.pexels.com/photo/orchestra-and-conductor-during-the-performance-13673492/",
+    title: "Devyan",
+    description: "Building a Software Dev Team. Experimental Project to orchestrate a team of agents to solve programming tasks.",
+    category: "AI Programmer"
   }
 ];
 
