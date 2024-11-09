@@ -1,7 +1,20 @@
 import React from 'react';
 import { ResearchCard } from './ResearchCard';
 
-const researchData = [
+// Define the type for research data items
+interface ResearchItem {
+  image: string;
+  title: string;
+  description: string;
+  category: string;
+}
+
+// Define props interface for ResearchGrid
+interface ResearchGridProps {
+  limit?: number;  // Make it optional with ?
+}
+
+const researchData: ResearchItem[] = [
   {
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80",
     title: "Advancing Large Language Models",
@@ -28,12 +41,15 @@ const researchData = [
   }
 ];
 
-export function ResearchGrid() {
+export const ResearchGrid: React.FC<ResearchGridProps> = ({ limit }) => {
+  // If limit is provided, slice the array, otherwise use the full array
+  const displayData = limit ? researchData.slice(0, limit) : researchData;
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {researchData.map((research, index) => (
+      {displayData.map((research, index) => (
         <ResearchCard key={index} {...research} />
       ))}
     </div>
   );
-}
+};
