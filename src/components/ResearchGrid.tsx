@@ -16,28 +16,16 @@ interface ResearchGridProps {
 
 const researchData: ResearchItem[] = [
   {
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80",
-    title: "Advancing Large Language Models",
-    description: "New approaches to improving context understanding and reasoning in LLMs through advanced neural architectures.",
-    category: "NLP"
+    image: "/images/yaaf.jpeg",
+    title: "Yet Another Agentic Framework",
+    description: "Our Inhouse Framework to create custom AI Agents with ease and zero coupling. Uses Openai assistants under the hood",
+    category: "Agentic Framework"
   },
   {
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80",
-    title: "Neural Network Architecture Innovation",
-    description: "Novel architectural patterns for improved model efficiency and reduced computational requirements.",
-    category: "Architecture"
-  },
-  {
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80",
-    title: "Multimodal Learning Systems",
-    description: "Integrating vision, language, and audio for more comprehensive AI understanding.",
-    category: "Multimodal"
-  },
-  {
-    image: "https://www.pexels.com/photo/orchestra-and-conductor-during-the-performance-13673492/",
+    image: "/images/devyan.jpeg",
     title: "Devyan",
     description: "Building a Software Dev Team. Experimental Project to orchestrate a team of agents to solve programming tasks.",
-    category: "AI Programmer"
+    category: "Multi Agent System"
   }
 ];
 

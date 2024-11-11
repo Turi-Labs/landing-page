@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Brain, Atom, Globe2, Users, ChevronRight, Github, Twitter, BookOpen, Newspaper, Mail, Menu, X } from 'lucide-react';
 import { ResearchGrid } from './ResearchGrid';
+import { FoundersSection } from './FoundersSection';
 import { Link } from 'react-router-dom';
 
 export function HomePage() {
@@ -107,14 +108,16 @@ export function HomePage() {
 
         <section className="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
           <div className="flex flex-col sm:flex-row justify-between items-center mb-12 gap-4">
-            <h2 className="text-3xl sm:text-4xl font-bold text-center sm:text-left">Latest Experiments</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-center sm:text-left">Latest</h2>
             <Link to="/research" className="text-blue-400 hover:text-blue-500 flex items-center gap-2 text-sm sm:text-base group">
               View All <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </div>
           <ResearchGrid limit={2} />
         </section>
-
+        
+        <FoundersSection />
+        
         <section className="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
           <div className="glass-card p-6 sm:p-12 transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/20">
             <div className="max-w-2xl mx-auto text-center">

@@ -12,24 +12,24 @@ const blogPosts = [
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80",
     category: "Research"
   },
-  {
-    title: "Ethical Considerations in AI Development",
-    excerpt: "Discussing the importance of responsible AI development and its implications for society.",
-    author: "Prof. Michael Roberts",
-    date: "March 12, 2024",
-    readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80",
-    category: "Ethics"
-  },
-  {
-    title: "Quantum Computing and AI: A New Frontier",
-    excerpt: "Investigating the intersection of quantum computing and artificial intelligence.",
-    author: "Dr. James Wilson",
-    date: "March 10, 2024",
-    readTime: "10 min read",
-    image: "https://images.unsplash.com/photo-1693520999631-6ac145c1dd15?auto=format&fit=crop&q=80",
-    category: "Technology"
-  }
+  // {
+  //   title: "Ethical Considerations in AI Development",
+  //   excerpt: "Discussing the importance of responsible AI development and its implications for society.",
+  //   author: "Prof. Michael Roberts",
+  //   date: "March 12, 2024",
+  //   readTime: "6 min read",
+  //   image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80",
+  //   category: "Ethics"
+  // },
+  // {
+  //   title: "Quantum Computing and AI: A New Frontier",
+  //   excerpt: "Investigating the intersection of quantum computing and artificial intelligence.",
+  //   author: "Dr. James Wilson",
+  //   date: "March 10, 2024",
+  //   readTime: "10 min read",
+  //   image: "https://images.unsplash.com/photo-1693520999631-6ac145c1dd15?auto=format&fit=crop&q=80",
+  //   category: "Technology"
+  // }
 ];
 
 export function BlogPage() {
@@ -52,7 +52,7 @@ export function BlogPage() {
 
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Blog</h1>
           <p className="text-xl text-gray-300 max-w-2xl">
-            Insights and updates from our team of researchers and engineers on the latest developments in AI.
+            We share our experiences building ai agents and testing them till their limits in our blogposts.
           </p>
         </header>
 
