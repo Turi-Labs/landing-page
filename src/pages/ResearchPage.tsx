@@ -13,7 +13,7 @@ export function ResearchPage() {
           <nav className="flex items-center justify-between mb-8">
             <Link to="/" className="flex items-center gap-2 hover:scale-105 transition-transform duration-300">
               <Brain className="w-8 h-8 text-blue-500 feature-icon" />
-              <span className="text-xl font-bold">Nexus AI Lab</span>
+              <span className="text-xl font-bold">Turi Labs</span>
             </Link>
           </nav>
 

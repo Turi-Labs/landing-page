@@ -4,10 +4,12 @@ import { ResearchPage } from './pages/ResearchPage';
 import { ProductPage } from './pages/ProductPage';
 import { BlogPage } from './pages/BlogPage';
 import { NewsletterPage } from './pages/NewsletterPage';
+import LotusAnimation from './components/LotusAnimation';
 
 function App() {
   return (
     <Router>
+      <LotusAnimation />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/research" element={<ResearchPage />} />

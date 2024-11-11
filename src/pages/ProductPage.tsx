@@ -1,35 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Brain, ChevronLeft, Cpu, Cloud, Shield, Zap } from 'lucide-react';
+import { Brain, ChevronLeft, Cpu, Twitter, Shield, Code } from 'lucide-react';
 
 const products = [
   {
-    icon: Cpu,
+    icon: Code,
     name: "NexusCore AI",
     description: "Enterprise-grade AI infrastructure for large-scale deployments",
     features: ["Scalable Architecture", "Real-time Processing", "Custom Model Training"],
     image: "https://images.unsplash.com/photo-1693520999631-6ac145c1dd15?auto=format&fit=crop&q=80"
   },
   {
-    icon: Cloud,
-    name: "CloudInference",
-    description: "Cloud-based inference engine for distributed AI applications",
-    features: ["Global Distribution", "Low Latency", "Auto-scaling"],
+    icon: Twitter,
+    name: "Tactical Twitter",
+    description: "An AI Agent which tweets everything about football.",
+    features: ["Twitter account managed by an AI Agent", "Fully Automated", "Footbal Tweets"],
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80"
-  },
-  {
-    icon: Shield,
-    name: "AIGuard",
-    description: "Security and monitoring solution for AI systems",
-    features: ["Threat Detection", "Performance Monitoring", "Compliance Tools"],
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80"
-  },
-  {
-    icon: Zap,
-    name: "FastLearn",
-    description: "Rapid model training and deployment platform",
-    features: ["Quick Deployment", "Automated Optimization", "Version Control"],
-    image: "https://images.unsplash.com/photo-1696332331308-8a064129a487?auto=format&fit=crop&q=80"
   }
 ];
 
@@ -43,7 +29,7 @@ export function ProductPage() {
           <nav className="flex items-center justify-between mb-8">
             <Link to="/" className="flex items-center gap-2 hover:scale-105 transition-transform duration-300">
               <Brain className="w-8 h-8 text-blue-500 feature-icon" />
-              <span className="text-xl font-bold">Nexus AI Lab</span>
+              <span className="text-xl font-bold">Turi Labs</span>
             </Link>
           </nav>
 
