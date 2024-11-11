@@ -128,7 +128,7 @@ export function HomePage() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/20 text-white focus:outline-none focus:border-blue-500 transition-all duration-300"
+                  className="flex-1 px-4 py-3 rounded-lg bg-white/5  border border-white/20 text-white focus:outline-none focus:border-blue-500 transition-all duration-300"
                 />
                 <button className="btn-primary whitespace-nowrap">
                   Subscribe

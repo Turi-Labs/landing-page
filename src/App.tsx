@@ -5,9 +5,11 @@ import { ProductPage } from './pages/ProductPage';
 import { BlogPage } from './pages/BlogPage';
 import { NewsletterPage } from './pages/NewsletterPage';
 
+
 function App() {
   return (
     <Router>
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/research" element={<ResearchPage />} />
