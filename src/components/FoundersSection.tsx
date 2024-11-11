@@ -4,7 +4,7 @@ const founders = [
   {
     name: "Sai Yashwanth",
     role: "Co-founder",
-    image: "/src/assets/images/sai.png",
+    image: "/images/sai.png",
     bio: "Author, AI Engineer at Vuhosi",
     social: {
       twitter: "https://x.com/yashwanthsai29",
@@ -15,7 +15,7 @@ const founders = [
   {
     name: "Mayank Kashyap",
     role: "Co-founder",
-    image: "/src/assets/images/mayank.jpg",
+    image: "/images/mayank.jpg",
     bio: "Engineer, Instructor",
     social: {
       twitter: "https://x.com/Jaggerydev10",
