@@ -4,13 +4,13 @@ import { Brain, ChevronLeft, Calendar, Clock, User } from 'lucide-react';
 
 const blogPosts = [
   {
-    title: "The Future of Large Language Models",
-    excerpt: "Exploring the next generation of language models and their potential impact on various industries.",
-    author: "Dr. Sarah Chen",
-    date: "March 15, 2024",
-    readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80",
-    category: "Research"
+    title: "What are AI Agents",
+    excerpt: "Recently I built this particular project trying to replicate devin (by using multiagent systems) and it blew up. So I have decided to write a mini tutorial/discussion on how I did it.",
+    author: "Sai Yashwanth",
+    date: "Nov 11, 2024",
+    readTime: "3 min read",
+    image: "/images/devyan.jpeg",
+    category: "AI Agents, Crewai"
   },
   // {
   //   title: "Ethical Considerations in AI Development",
@@ -52,7 +52,8 @@ export function BlogPage() {
 
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Blog</h1>
           <p className="text-xl text-gray-300 max-w-2xl">
-            We share our experiences building ai agents and testing them till their limits in our blogposts.
+            We share our experiences building ai agents and testing them till their limits in our blogposts. 
+            Many more blogs will be coming up.
           </p>
         </header>
 

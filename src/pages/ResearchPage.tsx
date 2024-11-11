@@ -21,9 +21,9 @@ export function ResearchPage() {
             <ChevronLeft className="w-4 h-4" /> Back to Home
           </Link>
 
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6">Our Research</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6">Our Experiments</h1>
           <p className="text-xl text-gray-300 max-w-2xl">
-            Explore our latest research projects and breakthroughs in artificial intelligence, machine learning, and cognitive computing.
+            Here are some of our experimental projects we built purely for fun and for the sake of testing the limits of llms and frameworks around llms.
           </p>
         </header>
 
