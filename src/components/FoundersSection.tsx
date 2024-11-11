@@ -1,11 +1,12 @@
 import { Github, Linkedin, Twitter } from 'lucide-react';
-
+import sai from "../assets/images/sai.png"
+import mayank from "../assets/images/mayank.jpg"
 const founders = [
   {
     name: "Sai Yashwanth",
-    role: "",
-    image: "",
-    bio: "",
+    role: "Co-founder",
+    image: sai,
+    bio: "Author, AI Engineer at Vuhosi",
     social: {
       twitter: "https://x.com/yashwanthsai29",
       linkedin: "www.linkedin.com/in/saiyashwanth29",
@@ -14,9 +15,9 @@ const founders = [
   },
   {
     name: "Mayank Kashyap",
-    role: "",
-    image: "",
-    bio: "",
+    role: "Co-founder",
+    image: mayank,
+    bio: "Engineer, Instructor",
     social: {
       twitter: "https://x.com/Jaggerydev10",
       linkedin: "https://www.linkedin.com/in/mayank-kashyap-402065232/",
