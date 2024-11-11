@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 import { Brain, ChevronLeft, Calendar, Clock, User } from 'lucide-react';
 
 const blogPosts = [
-  // {
-  //   title: "The Future of Large Language Models",
-  //   excerpt: "Exploring the next generation of language models and their potential impact on various industries.",
-  //   author: "Dr. Sarah Chen",
-  //   date: "March 15, 2024",
-  //   readTime: "8 min read",
-  //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80",
-  //   category: "Research"
-  // },
+  {
+    title: "The Future of Large Language Models",
+    excerpt: "Exploring the next generation of language models and their potential impact on various industries.",
+    author: "Dr. Sarah Chen",
+    date: "March 15, 2024",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80",
+    category: "Research"
+  },
   // {
   //   title: "Ethical Considerations in AI Development",
   //   excerpt: "Discussing the importance of responsible AI development and its implications for society.",
