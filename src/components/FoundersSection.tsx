@@ -16,7 +16,7 @@ const founders = [
     name: "Mayank Kashyap",
     role: "Co-founder",
     image: "/images/mayank.jpg",
-    bio: "Engineer, Instructor",
+    bio: "Engineer, Github Campus Expert",
     social: {
       twitter: "https://x.com/Jaggerydev10",
       linkedin: "https://www.linkedin.com/in/mayank-kashyap-402065232/",
