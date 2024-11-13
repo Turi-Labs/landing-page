@@ -125,7 +125,7 @@ export function HomePage() {
             <div className="max-w-2xl mx-auto text-center">
               <Mail className="w-12 sm:w-16 h-12 sm:h-16 text-blue-400 mx-auto mb-6 feature-icon" />
               <h2 className="text-2xl sm:text-3xl font-bold mb-4">Stay Updated with Our Newsletter</h2>
-              <p className="text-gray-300 mb-8">Get the latest AI research updates, blog posts, and event announcements delivered to your inbox. </p> 
+              <p className="text-gray-300 mb-8">Click here to get the latest AI research updates, blog posts, and event announcements delivered to your inbox. </p> 
               
               <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             </div>
