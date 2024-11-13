@@ -120,23 +120,18 @@ export function HomePage() {
         <FoundersSection />
         
         <section className="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
-          <div className="glass-card p-6 sm:p-12 transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/20">
+        <Link to="/newsletter">  
+        <div className="glass-card p-6 sm:p-12 transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/20">
             <div className="max-w-2xl mx-auto text-center">
               <Mail className="w-12 sm:w-16 h-12 sm:h-16 text-blue-400 mx-auto mb-6 feature-icon" />
               <h2 className="text-2xl sm:text-3xl font-bold mb-4">Stay Updated with Our Newsletter</h2>
-              <p className="text-gray-300 mb-8">Get the latest AI research updates, blog posts, and event announcements delivered to your inbox.</p>
+              <p className="text-gray-300 mb-8">Get the latest AI research updates, blog posts, and event announcements delivered to your inbox. </p> 
+              
               <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-lg bg-white/5  border border-white/20 text-white focus:outline-none focus:border-blue-500 transition-all duration-300"
-                />
-                <button className="btn-primary whitespace-nowrap">
-                  Subscribe
-                </button>
-              </div>
+            </div>
             </div>
           </div>
+          </Link>
         </section>
 
         <footer className="mt-16 sm:mt-24 glass-card">
