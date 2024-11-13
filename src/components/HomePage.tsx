@@ -35,8 +35,9 @@ export function HomePage() {
               <Link to="/product" className="nav-link">Product</Link>
               <Link to="/blog" className="nav-link">Blog</Link>
               <Link to="/newsletter" className="nav-link">Newsletter</Link>
-              <button className="btn-primary">
-                Contact Us
+              <button className="btn-primary"
+                  onClick={() => window.open('https://cal.com/sai-yashwanth/15min', '_blank')}>
+                Book a Call
               </button>
             </div>
           </nav>
