@@ -1,8 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Brain, ChevronLeft, Mail, Bell, Zap, Star } from 'lucide-react';
+import { NewsletterService } from '../services/newsletterService';
 
 export function NewsletterPage() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: ''
+  });
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('loading');
+    setErrorMessage('');
+
+    try {
+      const newsletterService = new NewsletterService();
+      console.log(formData.name)
+      await newsletterService.addSubscriber({
+        name: formData.name,
+        email: formData.email
+      });
+      
+      setStatus('success');
+      setFormData({ name: '', email: '' });
+    } catch (error) {
+      setStatus('error');
+      console.log(error)
+      setErrorMessage('Failed to subscribe. Please try again later.');
+    }
+  };
+
+
   return (
     <div className="min-h-screen text-white relative">
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/80 pointer-events-none"></div>
@@ -47,34 +86,52 @@ export function NewsletterPage() {
               ))}
             </div>
 
-            <div className="glass-card p-8 sm:p-12">
-              <form className="max-w-md mx-auto">
-                <div className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">Name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      className="w-full px-4 py-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/20 text-white focus:outline-none focus:border-blue-500 transition-all duration-300"
-                      placeholder="Enter your name"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">Email</label>
-                    <input
-                      type="email"
-                      id="email"
-                      className="w-full px-4 py-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/20 text-white focus:outline-none focus:border-blue-500 transition-all duration-300"
-                      placeholder="Enter your email"
-                    />
-                  </div> 
-                  <button type="submit" className="w-full btn-primary">
-                    Subscribe to Newsletter
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
+             <div className="glass-card p-8 sm:p-12">
+    <form className="max-w-md mx-auto" onSubmit={handleSubmit}>
+      <div className="space-y-6">
+        <div>
+          <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">Name</label>
+          <input
+            type="text"
+            id="name"
+            value={formData.name}
+            onChange={handleInputChange}
+            className="w-full px-4 py-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/20 text-white focus:outline-none focus:border-blue-500 transition-all duration-300"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">Email</label>
+          <input
+            type="email"
+            id="email"
+            value={formData.email}
+            onChange={handleInputChange}
+            className="w-full px-4 py-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/20 text-white focus:outline-none focus:border-blue-500 transition-all duration-300"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        
+        {status === 'error' && (
+          <div className="text-red-500 text-sm">{errorMessage}</div>
+        )}
+        
+        {status === 'success' && (
+          <div className="text-green-500 text-sm">Successfully subscribed to the newsletter!</div>
+        )}
+        
+        <button 
+          type="submit" 
+          className="w-full btn-primary disabled:opacity-50"
+          disabled={status === 'loading'}
+        >
+          {status === 'loading' ? 'Subscribing...' : 'Subscribe to Newsletter'}
+        </button>
+      </div>
+    </form>
+  </div>          </div>
         </main>
       </div>
     </div>

@@ -148,10 +148,10 @@ export function HomePage() {
               </Link>
               <div className="flex gap-6">
                 {[
-                  { icon: Github, link: "#" },
+                  { icon: Github, link: "https://github.com/Turi-Labs" },
                   { icon: Twitter, link: "#" },
-                  { icon: BookOpen, link: "#" },
-                  { icon: Newspaper, link: "#" }
+                  { icon: BookOpen, link: "/blogs" },
+                  { icon: Newspaper, link: "/newsletter" }
                 ].map((social, i) => (
                   <a key={i} href={social.link} className="social-icon">
                     <social.icon className="w-6 h-6" />
