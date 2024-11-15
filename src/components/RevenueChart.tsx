@@ -10,6 +10,9 @@ import {
   Tooltip,
   Legend,
   Filler,
+  ChartOptions,
+  ScriptableContext,
+  TooltipItem,
 } from 'chart.js';
 
 ChartJS.register(
@@ -29,10 +32,10 @@ const RevenueChart = () => {
     datasets: [
       {
         label: 'Revenue (USD)',
-        data: [0, 200, null, null, null, null], // Only first 2 weeks of data
+        data: [0, 200, null, null, null, null],
         borderColor: '#60a5fa',
         borderWidth: 2,
-        backgroundColor: (context) => {
+        backgroundColor: (context: ScriptableContext<"line">) => {
           const ctx = context.chart.ctx;
           const gradient = ctx.createLinearGradient(0, 0, 0, 300);
           gradient.addColorStop(0, 'rgba(96, 165, 250, 0.2)');
@@ -44,11 +47,10 @@ const RevenueChart = () => {
         pointBackgroundColor: '#60a5fa',
         pointBorderColor: '#fff',
         pointBorderWidth: 2,
-        pointRadius: (context) => {
-          // Only show points for actual data
+        pointRadius: (context: ScriptableContext<"line">) => {
           return context.raw === null ? 0 : 6;
         },
-        pointHoverRadius: (context) => {
+        pointHoverRadius: (context: ScriptableContext<"line">) => {
           return context.raw === null ? 0 : 8;
         },
         pointHoverBackgroundColor: '#fff',
@@ -58,7 +60,7 @@ const RevenueChart = () => {
     ],
   };
 
-  const options = {
+  const options: ChartOptions<"line"> = {
     responsive: true,
     plugins: {
       legend: {
@@ -71,7 +73,7 @@ const RevenueChart = () => {
         padding: 12,
         displayColors: false,
         callbacks: {
-          label: function(context) {
+          label: function(context: TooltipItem<"line">) {
             return context.raw === null ? 'No data yet' : `$ ${context.raw}`;
           }
         }
@@ -82,19 +84,19 @@ const RevenueChart = () => {
         beginAtZero: true,
         grid: {
           color: 'rgba(96, 165, 250, 0.1)',
-          drawBorder: false,
+          display: true,
         },
         ticks: {
           color: '#94a3b8',
           padding: 10,
-          callback: function(value) {
-            return '$ ' + value;
+          callback: function(tickValue: number | string) {
+            return '$ ' + tickValue.toString();
           }
         },
         border: {
           dash: [5, 5],
         },
-        max: 300, // Set a fixed max to show room for growth
+        max: 300,
       },
       x: {
         grid: {
@@ -111,7 +113,7 @@ const RevenueChart = () => {
     },
     interaction: {
       intersect: false,
-      mode: 'index',
+      mode: 'index' as const,
     },
     elements: {
       line: {
