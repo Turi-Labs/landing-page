@@ -16,7 +16,7 @@ function App() {
         <Route path="/product" element={<ProductPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/newsletter" element={<NewsletterPage />} />
-        <Route path="/money" element={<RevenuePage />} />
+        <Route path="/revenue" element={<RevenuePage />} />
       </Routes>
     </Router>
   );
