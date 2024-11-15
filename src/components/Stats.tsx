@@ -6,13 +6,13 @@ const statsData = [
     label: 'Total Revenue',
     value: '\$200',
     icon: DollarSign,
-    change: '🚀',
+    change: '+200',
   },
   {
     label: 'Active Clients',
     value: '1',
     icon: Users,
-    change: '👥',
+    change: '+1',
   },
   // {
   //   label: 'Growth Rate',
