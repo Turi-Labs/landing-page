@@ -16,9 +16,7 @@ export function RevenuePage() {
               <Brain className="w-8 h-8 text-blue-500 feature-icon" />
               <span className="text-xl font-bold">Turi Labs</span>
             </Link>
-            <div className="bg-blue-500/10 px-4 py-2 rounded-lg">
-              <span className="text-blue-400 font-mono">2024.OVERVIEW</span>
-            </div>
+
           </nav>
 
           <Link to="/" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-500 mb-8">
