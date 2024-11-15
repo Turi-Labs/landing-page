@@ -10,26 +10,10 @@ const blogPosts = [
     date: "Nov 11, 2024",
     readTime: "3 min read",
     image: "/images/devyan.jpeg",
-    category: "AI Agents, Crewai"
+    category: "AI Agents, Crewai",
+    link: 'https://saiyashwanth.tech/articles/aiagents'
   },
-  // {
-  //   title: "Ethical Considerations in AI Development",
-  //   excerpt: "Discussing the importance of responsible AI development and its implications for society.",
-  //   author: "Prof. Michael Roberts",
-  //   date: "March 12, 2024",
-  //   readTime: "6 min read",
-  //   image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80",
-  //   category: "Ethics"
-  // },
-  // {
-  //   title: "Quantum Computing and AI: A New Frontier",
-  //   excerpt: "Investigating the intersection of quantum computing and artificial intelligence.",
-  //   author: "Dr. James Wilson",
-  //   date: "March 10, 2024",
-  //   readTime: "10 min read",
-  //   image: "https://images.unsplash.com/photo-1693520999631-6ac145c1dd15?auto=format&fit=crop&q=80",
-  //   category: "Technology"
-  // }
+ 
 ];
 
 export function BlogPage() {
@@ -95,9 +79,11 @@ export function BlogPage() {
                         {post.readTime}
                       </div>
                     </div>
-                    <button className="mt-6 btn-primary">
+                    <a href={post.link}>
+                    <button className="mt-6 btn-primary"  >
                       Read More
                     </button>
+                    </a>
                   </div>
                 </div>
               </article>

@@ -65,7 +65,7 @@ export function ProductPage() {
                     ))}
                   </div>
                   <button className="mt-6 w-full btn-primary">
-                    Learn More
+                    Coming soon
                   </button>
                 </div>
               </div>
