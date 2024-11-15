@@ -4,7 +4,7 @@ import { ResearchPage } from './pages/ResearchPage';
 import { ProductPage } from './pages/ProductPage';
 import { BlogPage } from './pages/BlogPage';
 import { NewsletterPage } from './pages/NewsletterPage';
-
+import { RevenuePage } from './pages/RevenuePage'
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <Route path="/product" element={<ProductPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/newsletter" element={<NewsletterPage />} />
+        <Route path="/money" element={<RevenuePage />} />
       </Routes>
     </Router>
   );
