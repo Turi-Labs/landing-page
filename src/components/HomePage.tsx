@@ -49,9 +49,11 @@ export function HomePage() {
                 <Link to="/product" className="text-xl nav-link" onClick={() => setIsMenuOpen(false)}>Product</Link>
                 <Link to="/blog" className="text-xl nav-link" onClick={() => setIsMenuOpen(false)}>Blog</Link>
                 <Link to="/newsletter" className="text-xl nav-link" onClick={() => setIsMenuOpen(false)}>Newsletter</Link>
-                <button className="btn-primary">
-                  Contact Us
-                </button>
+                <button className="btn-primary"
+                  onClick={() => window.open('https://cal.com/sai-yashwanth/15min', '_blank')}>
+                Book a Call
+              </button>
+
                 <button 
                   className="absolute top-8 right-4 transition-transform duration-300 hover:scale-110"
                   onClick={() => setIsMenuOpen(false)}
