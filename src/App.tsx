@@ -5,6 +5,7 @@ import { ProductPage } from './pages/ProductPage';
 import { BlogPage } from './pages/BlogPage';
 import { NewsletterPage } from './pages/NewsletterPage';
 import { RevenuePage } from './pages/RevenuePage'
+import { Footer } from './components/FooterSection'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/newsletter" element={<NewsletterPage />} />
         <Route path="/revenue" element={<RevenuePage />} />
       </Routes>
+
     </Router>
   );
 }
