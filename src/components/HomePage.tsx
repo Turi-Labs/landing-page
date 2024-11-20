@@ -71,7 +71,7 @@ export function HomePage() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-[length:200%_auto] animate-[gradientMove_3s_linear_infinite]"> LLM Agents</span>
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto lg:mx-0">
-                Indie AI Research Lab dedicated to advancing the frontier of autonomous AI agents. We're building the next generation of intelligent systems that can learn, adapt, and evolve.
+                Indie AI Research Lab X Agency dedicated to advancing the frontier of autonomous AI agents. We're building the next generation of intelligent systems that can learn, adapt, and evolve.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link to="/research" className="btn-primary">
