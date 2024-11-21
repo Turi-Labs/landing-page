@@ -72,6 +72,7 @@ export function HomePage() {
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto lg:mx-0">
                 Indie AI Research Lab X Agency dedicated to advancing the frontier of autonomous AI agents. We're building the next generation of intelligent systems that can learn, adapt, and evolve.
+                Our goal: Ideate ⏩ Validate ⏩ Implement
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link to="/research" className="btn-primary">
@@ -98,7 +99,7 @@ export function HomePage() {
             {[
               { icon: Atom, title: "Agency Services", desc: "We provide consulting and development services to help others build AI agents quickly and efficiently.", color: "blue" },
               { icon: Globe2, title: "Indie Projects", desc: "We focus on creating innovative experimental projects to explore new ideas and technologies in AI.", color: "purple" },
-              { icon: Users, title: "AI Agents as Service", desc: "We aim to develop and offer AI agents that can be easily integrated into various applications and services.", color: "green" }
+              { icon: Users, title: "AI Agents as Service", desc: "We aim to develop and offer AI agents which would be useful for your businesses. Powerful AI agents that understand your business", color: "green" }
             ].map((feature, i) => (
               <div key={i} className="glass-card p-8 group hover:shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-blue-500/10">
                 <feature.icon className={`w-12 h-12 text-${feature.color}-500 mb-4 feature-icon`} />
