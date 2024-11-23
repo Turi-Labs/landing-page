@@ -10,7 +10,7 @@ const statsData = [
   },
   {
     label: 'Active Clients',
-    value: '1',
+    value: '2',
     icon: Users,
     change: '+1',
   },
