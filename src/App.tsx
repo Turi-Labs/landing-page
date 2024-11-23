@@ -6,7 +6,7 @@ import { BlogPage } from './pages/BlogPage';
 import { NewsletterPage } from './pages/NewsletterPage';
 import { RevenuePage } from './pages/RevenuePage'
 import { Footer } from './components/FooterSection'
-
+import { Analytics } from "@vercel/analytics/react"
 function App() {
   return (
     <Router>
@@ -19,7 +19,7 @@ function App() {
         <Route path="/newsletter" element={<NewsletterPage />} />
         <Route path="/revenue" element={<RevenuePage />} />
       </Routes>
-
+<Analytics />
     </Router>
   );
 }
