@@ -3,6 +3,8 @@ import { Brain, Atom, Globe2, Users, ChevronRight, Github, Twitter, BookOpen, Ne
 import { ResearchGrid } from './ResearchGrid';
 import { FoundersSection } from './FoundersSection';
 import { Link } from 'react-router-dom';
+import { PricingSection } from './PricingSection';
+
 
 export function HomePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -110,6 +112,7 @@ export function HomePage() {
           </div>
         </section>
 
+<PricingSection />
 <section className="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
   <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">What we use</h2>
   <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
